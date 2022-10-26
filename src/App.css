@@ -1,0 +1,47 @@
+.app-wrapper {
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr ;
+  grid-gap: 10px;
+
+  grid-template-areas: 'h h'
+                        'n c';
+  width: 1200px;
+  margin: auto;
+
+}
+
+.nav {
+  grid-area: n ;
+  border: 1px green solid;
+}
+.header {
+  grid-area:h ;
+  border: 1px black solid;
+
+}
+.content {
+  grid-area:c;
+  border: 1px yellow solid;
+
+}
+.imageHeader {
+  width: 60px;
+}
+.contentImage {
+  width: 100%;
+  height: 200px;
+}
+.imageBack {
+  height: 200px;
+
+  border: 1px yellow solid;
+
+  background: url("https://png.pngtree.com/background/20220715/original/pngtree-c4d-cyberpunk-city-background-picture-image_1623401.jpg");
+
+}
+.avatar {
+  width: 130px;
+  border-radius: 50%;
+
+}
